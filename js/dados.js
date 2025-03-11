@@ -2,13 +2,8 @@ var nome = []
 var sobrenome = []
 var email = []
 
-// if(nomeInformado == '' && sobrenome == '' && emailInformado === ''){
-//     alert('Informe dados válidos ou faça login');
-// }else{
-//     addEventListener('click', verificarInformacao());
-// }
 
-addEventListener('click', verificarInformacao());
+addEventListener('click', cadastrarDados());
 
 
 function cadastrarDados(){
@@ -18,17 +13,18 @@ function cadastrarDados(){
 
     // condição para verificar se os inputs não estão vazios
     if(nomeInformado == '' && sobrenome == '' && emailInformado == ''){
-        alert('Informe dados válidos!');     
+        alert('Informe dados válidos!');
     }else{
         // adicioando dados em seus respectivos arrays
         nome.push(nomeInformado);
         sobrenome.push(sobrenomeInformado);
         email.push(emailInformado)
 
-        alert(`Usuário ${nomeInformado} cadastrado(a)`);
+        alert(`Usuário ${nomeInformado} ${sobrenomeInformado} cadastrado(a)`);
 
-        console.log(nome, sobrenome, email);
     }
+
 }
+
 
 
