@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="js/dados.js"></script>
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="medidaFormulario">
-        <div class="informacaoUsuario">
+        <form action="" class="informacaoUsuario">
             <input type="text" id="nomeUsuario" placeholder="Nome">
             <input type="text" id="sobrenomeUsuario" placeholder="Sobrenome">
             <input type="email" id="emailUsuario" placeholder="Informe seu e-mail">
+            <button onclick="cadastrarDados()" class="botaoCadastrar">
+                Cadastrar
+            </button>
+        </form>
         </div>
-        <button onclick="cadastrarDados()">
-            Cadastrar
-        </button>
-        <button onclick="verificarDados()">
+        <!-- <button onclick="verificarDados()">
             Fazer login
-        </button>
-    </div>
+        </button> -->
 </body>
 </html>
